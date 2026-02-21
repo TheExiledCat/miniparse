@@ -2,7 +2,11 @@ namespace Parsing;
 
 public class Tokenizer
 {
-    public Token[] Tokenize(string input)
+    private readonly string _Input;
+    public Tokenizer(string input){
+        _Input = input;
+    }
+    public Token[] Tokenize()
     {
         //TODO
 
